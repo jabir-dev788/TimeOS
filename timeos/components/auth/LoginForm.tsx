@@ -36,7 +36,7 @@ export default function LoginForm() {
   }
 
   return (
-    <Card className="w-[350px]">
+    <Card className="w-87.5">
       <CardHeader>
         <CardTitle>Welcome Back</CardTitle>
         <CardDescription>Login to your TimeOS account</CardDescription>
@@ -70,7 +70,7 @@ export default function LoginForm() {
             {loading ? 'Logging in...' : 'Login'}
           </Button>
           <p className="text-sm text-muted-foreground">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <Link href="/signup" className="text-primary hover:underline">
               Sign up
             </Link>

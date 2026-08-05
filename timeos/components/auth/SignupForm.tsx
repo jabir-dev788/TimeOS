@@ -31,7 +31,11 @@ export default function SignupForm() {
     })
 
     if (error) {
-      setError(error.message)
+      if (error.message === '{}' || !error.message) {
+        setError('Failed to send verification email. Please check your Supabase SMTP sender email matches a verified domain in Resend.')
+      } else {
+        setError(error.message)
+      }
     } else {
       router.push('/verify-email')
     }
@@ -39,7 +43,7 @@ export default function SignupForm() {
   }
 
   return (
-    <Card className="w-[350px]">
+    <Card className="w-87.5">
       <CardHeader>
         <CardTitle>Create Account</CardTitle>
         <CardDescription>Start using TimeOS for free</CardDescription>

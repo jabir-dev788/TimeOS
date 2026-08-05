@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function VerifyEmailPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
-      <Card className="w-[350px]">
+      <Card className="w-87.5">
         <CardHeader>
           <CardTitle>Check Your Email</CardTitle>
           <CardDescription>
@@ -15,7 +15,7 @@ export default function VerifyEmailPage() {
         <CardContent>
           <p className="text-sm text-muted-foreground">
             Click the link in your email to verify your account.
-            If you don't see it, check your spam folder.
+            If you don&lsquo;t see it, check your spam folder.
           </p>
         </CardContent>
         <CardFooter>

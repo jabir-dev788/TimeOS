@@ -1,4 +1,3 @@
-// Signup page
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import SignupForm from '@/components/auth/SignupForm'
