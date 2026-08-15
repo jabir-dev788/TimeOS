@@ -12,7 +12,7 @@ interface CityResult {
 }
 
 interface CitySearchProps {
-  onAddCity: (city: CityResult) => void
+  onAddCity?: (city: CityResult) => void
 }
 
 export default function CitySearch({ onAddCity }: CitySearchProps) {
@@ -91,7 +91,7 @@ export default function CitySearch({ onAddCity }: CitySearchProps) {
               key={`${city.name}-${city.country}`}
               className="p-3 hover:bg-muted cursor-pointer flex justify-between items-center"
               onClick={() => {
-                onAddCity(city)
+                onAddCity?.(city)
                 clearSearch()
               }}
             >

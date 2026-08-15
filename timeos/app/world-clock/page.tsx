@@ -1,3 +1,5 @@
+'use client'
+
 import PresetCities from '@/components/clock/PresetCities'
 import CitySearch from '@/components/clock/CitySearch'
 import ThemeToggle from '@/components/ThemeToggle'
